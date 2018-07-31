@@ -3,15 +3,14 @@ import { StyleSheet, Platform, Dimensions } from "react-native";
 export default StyleSheet.create({
 	screenOverlay: {
 		height: Dimensions.get("window").height,
-		backgroundColor: "black",
-		opacity: 0.8
+		backgroundColor: "#0B132B",
+		opacity: 0.96
 	},
 	dialogPrompt: {
 		...Platform.select({
 			ios: {
-				opacity: 0.9,
-				backgroundColor: "rgb(222,222,222)",
-				borderRadius: 15
+				backgroundColor: "white",
+				borderRadius: 5
 			},
 			android: {
 				borderRadius: 5,
